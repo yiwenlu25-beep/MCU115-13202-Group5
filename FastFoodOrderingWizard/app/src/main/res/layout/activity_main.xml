@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btnMainMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. 選擇主餐 (Main Meal)"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSideDishes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. 選擇副餐 (Side Dishes - 可複選)"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. 選擇飲料 (Drink)"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. 確認並送出訂單 (Confirm)"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
