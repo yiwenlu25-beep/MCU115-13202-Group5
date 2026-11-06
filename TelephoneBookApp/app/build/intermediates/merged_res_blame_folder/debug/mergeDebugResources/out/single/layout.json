@@ -1,18 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\User\\.gradle\\daemon\\9.5.0\\com.example.telephonebookapp-mergeDebugResources-38:\\layout\\activity_add_contact.xml",
-        "source": "C:\\Users\\User\\.gradle\\daemon\\9.5.0\\com.example.telephonebookapp-main-41:\\layout\\activity_add_contact.xml"
+        "merged": "com.example.telephonebookapp-mergeDebugResources-41:/layout/fragment_result.xml",
+        "source": "com.example.telephonebookapp-main-44:/layout/fragment_result.xml"
     },
     {
-        "merged": "C:\\Users\\User\\.gradle\\daemon\\9.5.0\\com.example.telephonebookapp-mergeDebugResources-38:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\User\\.gradle\\daemon\\9.5.0\\com.example.telephonebookapp-main-41:\\layout\\activity_main.xml"
+        "merged": "com.example.telephonebookapp-mergeDebugResources-41:/layout/fragment_start.xml",
+        "source": "com.example.telephonebookapp-main-44:/layout/fragment_start.xml"
     },
     {
-        "merged": "com.example.telephonebookapp-mergeDebugResources-38:/layout/activity_main.xml",
-        "source": "com.example.telephonebookapp-main-41:/layout/activity_main.xml"
+        "merged": "com.example.telephonebookapp-mergeDebugResources-41:/layout/activity_main.xml",
+        "source": "com.example.telephonebookapp-main-44:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\User\\.gradle\\daemon\\9.5.0\\com.example.telephonebookapp-mergeDebugResources-38:\\layout\\item_contact.xml",
-        "source": "C:\\Users\\User\\.gradle\\daemon\\9.5.0\\com.example.telephonebookapp-main-41:\\layout\\item_contact.xml"
+        "merged": "com.example.telephonebookapp-mergeDebugResources-41:/layout/item_contact.xml",
+        "source": "com.example.telephonebookapp-main-44:/layout/item_contact.xml"
+    },
+    {
+        "merged": "com.example.telephonebookapp-mergeDebugResources-41:/layout/activity_add_contact.xml",
+        "source": "com.example.telephonebookapp-main-44:/layout/activity_add_contact.xml"
+    },
+    {
+        "merged": "com.example.telephonebookapp-mergeDebugResources-41:/layout/fragment_progress.xml",
+        "source": "com.example.telephonebookapp-main-44:/layout/fragment_progress.xml"
     }
 ]

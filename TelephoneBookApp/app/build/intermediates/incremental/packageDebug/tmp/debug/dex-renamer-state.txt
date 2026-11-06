@@ -1,10 +1,10 @@
-#Sun Nov 01 23:36:10 CST 2026
-base.0=C\:\\Users\\User\\AndroidStudioProjects\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\User\\AndroidStudioProjects\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\User\\AndroidStudioProjects\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\User\\AndroidStudioProjects\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.4=C\:\\Users\\User\\AndroidStudioProjects\\TelephoneBookApp\\app\\build\\intermediates\\global_synthetics_dex\\debug\\generateDebugGlobalSynthetics\\classes.dex
-base.5=C\:\\Users\\User\\AndroidStudioProjects\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Sat Nov 07 02:31:35 CST 2026
+base.0=C\:\\Users\\shihm\\StudioProjects\\MCU115-13202-Group5\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\shihm\\StudioProjects\\MCU115-13202-Group5\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\shihm\\StudioProjects\\MCU115-13202-Group5\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=C\:\\Users\\shihm\\StudioProjects\\MCU115-13202-Group5\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.4=C\:\\Users\\shihm\\StudioProjects\\MCU115-13202-Group5\\TelephoneBookApp\\app\\build\\intermediates\\global_synthetics_dex\\debug\\generateDebugGlobalSynthetics\\classes.dex
+base.5=C\:\\Users\\shihm\\StudioProjects\\MCU115-13202-Group5\\TelephoneBookApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

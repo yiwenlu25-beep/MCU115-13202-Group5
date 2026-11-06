@@ -5,42 +5,46 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import com.example.telephonebookapp.R;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnGoToAdd;
+  public final Button btnCancel;
 
   @NonNull
-  public final EditText etSearch;
+  public final Button btnStart;
 
   @NonNull
-  public final RecyclerView recyclerView;
+  public final TabLayout tabLayout;
 
-  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull Button btnGoToAdd,
-      @NonNull EditText etSearch, @NonNull RecyclerView recyclerView) {
+  @NonNull
+  public final ViewPager2 viewPager;
+
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnCancel,
+      @NonNull Button btnStart, @NonNull TabLayout tabLayout, @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
-    this.btnGoToAdd = btnGoToAdd;
-    this.etSearch = etSearch;
-    this.recyclerView = recyclerView;
+    this.btnCancel = btnCancel;
+    this.btnStart = btnStart;
+    this.tabLayout = tabLayout;
+    this.viewPager = viewPager;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -65,25 +69,32 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnGoToAdd;
-      Button btnGoToAdd = ViewBindings.findChildViewById(rootView, id);
-      if (btnGoToAdd == null) {
+      id = R.id.btnCancel;
+      Button btnCancel = ViewBindings.findChildViewById(rootView, id);
+      if (btnCancel == null) {
         break missingId;
       }
 
-      id = R.id.etSearch;
-      EditText etSearch = ViewBindings.findChildViewById(rootView, id);
-      if (etSearch == null) {
+      id = R.id.btnStart;
+      Button btnStart = ViewBindings.findChildViewById(rootView, id);
+      if (btnStart == null) {
         break missingId;
       }
 
-      id = R.id.recyclerView;
-      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerView == null) {
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, btnGoToAdd, etSearch, recyclerView);
+      id = R.id.viewPager;
+      ViewPager2 viewPager = ViewBindings.findChildViewById(rootView, id);
+      if (viewPager == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((LinearLayout) rootView, btnCancel, btnStart, tabLayout,
+          viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

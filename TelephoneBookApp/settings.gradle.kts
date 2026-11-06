@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TelephoneBookApp"
+rootProject.name = "BackgroundMusic"
 include(":app")
  
