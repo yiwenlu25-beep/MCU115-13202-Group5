@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ThreadHandlerWizard</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_start">Start</string>
+    <string name="tab_progress">Progress</string>
+    <string name="tab_result">Result</string>
+    <string name="tab_start">Start</string>
+    <style name="Base.Theme.ThreadHandlerWizard" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ThreadHandlerWizard" parent="Base.Theme.ThreadHandlerWizard"/>
+</resources>
