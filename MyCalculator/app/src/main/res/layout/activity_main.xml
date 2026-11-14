@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 顯示區域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="end|bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 頂部綠色小字算式 -->
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3DDC84"
+            android:textSize="22sp" />
+
+        <!-- 中間列：左側運算符 + 右側主要結果 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvCurrentOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#A5A5A5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 按鈕區塊 -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <!-- Row 1: AC, C, 刪除, ÷ -->
+        <TableRow android:layout_marginBottom="2dp">
+            <Button
+                android:id="@+id/btnAC"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="AC"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnC"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="C"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/btnBackspace"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:contentDescription="Backspace"
+                android:src="@android:drawable/ic_delete"
+                android:tint="#FF3B30" />
+            <Button
+                android:id="@+id/btnDivide"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="÷"
+                android:textColor="#3DDC84"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Row 2: 7, 8, 9, × -->
+        <TableRow android:layout_marginBottom="2dp">
+            <Button
+                android:id="@+id/btn7"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btn8"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btn9"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btnMultiply"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="×"
+                android:textColor="#3DDC84"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Row 3: 4, 5, 6, - -->
+        <TableRow android:layout_marginBottom="2dp">
+            <Button
+                android:id="@+id/btn4"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btn5"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btn6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btnMinus"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="-"
+                android:textColor="#3DDC84"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Row 4: 1, 2, 3, + -->
+        <TableRow android:layout_marginBottom="2dp">
+            <Button
+                android:id="@+id/btn1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btn2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btn3"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btnPlus"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="75dp"
+                android:text="+"
+                android:textColor="#3DDC84"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Row 5: ., 0, = -->
+        <TableRow>
+            <Button
+                android:id="@+id/btnDot"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="90dp"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/btn0"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="90dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_height="90dp"
+                android:layout_span="2"
+                android:backgroundTint="#FF8C00"
+                android:text="="
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
