@@ -1,0 +1,4 @@
+.grandle/
+.idea/
+app/build/
+local.properties
